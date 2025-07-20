@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from './components/header/Header';
+import NextTopLoader from 'nextjs-toploader';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -16,8 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <NextTopLoader color='#FE595E'/>
       <body className={inter.className}>
-        <Header/>
         {children}
       </body>
     </html>

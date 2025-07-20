@@ -4,10 +4,12 @@ import Explore from "./components/Explore";
 import Live from "./components/Live";
 import GreatestOutdoors from "./components/GreatestOutdoors";
 import Footer from "./components/Footer";
+import Header from "./components/header/Header";
 
 export default function Home() {
   return (
       <>
+      <Header/>
       <main>
         <Banner />
         <Explore/>
@@ -21,6 +23,8 @@ export default function Home() {
         
       <Footer/>
       </main>
-    </>
+      </>
+      
+    
   );
 }
